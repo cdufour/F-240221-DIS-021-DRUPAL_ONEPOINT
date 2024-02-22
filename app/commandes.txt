@@ -1,0 +1,3 @@
+docker cp development.services.yml 296df0219f7e:/var/www/html/sites/
+docker cp settings.local.php 296df0219f7e:/var/www/html/sites/
+docker cp default/default.settings.php 296df0219f7e:/var/www/html/sites/default/

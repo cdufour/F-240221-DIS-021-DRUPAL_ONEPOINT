@@ -1,0 +1,20 @@
+version: '3.1'
+services:
+
+  drupal:
+    image: drupal:9
+    ports:
+      - 8083:80
+    restart: always
+    volumes:
+      - /c/Users/chris/Desktop/F-240221-DIS-021-DRUPAL_ONEPOINT/app/themes:/var/www/html/themes
+      - /c/Users/chris/Desktop/F-240221-DIS-021-DRUPAL_ONEPOINT/app/modules:/var/www/html/modules
+
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: pass
+      MYSQL_USER: user
+      MYSQL_PASSWORD: pass
+      MYSQL_DATABASE: drupal
+    restart: always

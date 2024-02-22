@@ -1,0 +1,12 @@
+name: AJC
+type: theme
+description: 'Theme de démonstration réalisée en formation'
+core_version_requirement: ^9.3 || ^10
+base theme: false
+
+regions: 
+  header: 'Header'
+  content: 'Content'
+  left_sidebar: 'Left Sidebar'
+  right_sidebar: 'Right Sidebar'
+  footer: 'Footer'
