@@ -1,0 +1,13 @@
+<div>field.html.twig</div>
+{% set nb_values = items | length %}
+<p>Nombre de valeurs associées à ce field: <strong>{{ nb_values }}</strong></p>
+
+{% if nb_values > 1 %}
+    
+    {% for item in items %}
+    <div>{{ item.content }}</div>
+    {% endfor %}
+
+{% else %}
+    <div>{{ items[0].content }}</div>
+{% endif %}

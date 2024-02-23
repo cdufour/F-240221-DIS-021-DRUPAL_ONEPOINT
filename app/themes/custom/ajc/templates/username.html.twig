@@ -1,0 +1,7 @@
+{% set link = false %}
+
+{% if link -%}
+  <a{{ attributes }}>{{ name }}{{ extra }}</a>
+{%- else -%}
+  <strong>{{ name }}{{ extra }}</strong>
+{%- endif -%}

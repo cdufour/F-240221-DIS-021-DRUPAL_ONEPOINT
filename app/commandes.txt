@@ -1,3 +1,13 @@
-docker cp development.services.yml 296df0219f7e:/var/www/html/sites/
-docker cp settings.local.php 296df0219f7e:/var/www/html/sites/
-docker cp default/default.settings.php 296df0219f7e:/var/www/html/sites/default/
+docker cp development.services.yml 29:/var/www/html/sites/
+docker cp settings.local.php 29:/var/www/html/sites/default/
+
+# copy settings.php file from container to host
+docker cp 29:/var/www/html/sites/default/settings.php ./
+
+# uncomment these lines (at the end of the file)
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+  include $app_root . '/' . $site_path . '/settings.local.php';
+}
+
+# copy back the updated file to the container
+docker cp settings.php 29:/var/www/html/sites/default/

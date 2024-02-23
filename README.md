@@ -7,6 +7,7 @@
 - [Twig](https://twig.symfony.com/)
 - [Functions - In Twig Templates](https://www.drupal.org/docs/theming-drupal/twig-in-drupal/functions-in-twig-templates)
 - [Adding assets (CSS, JS) to a Drupal theme via *.libraries.yml](https://www.drupal.org/docs/develop/theming-drupal/adding-assets-css-js-to-a-drupal-theme-via-librariesyml)
+- [Creating Modules](https://www.drupal.org/docs/develop/creating-modules)
 
 ## Autre liens
 - [Symfony for Drupal 8, 9, and 10](https://drupalize.me/topic/symfony)

@@ -21,3 +21,8 @@ Insérer les deux cours suivants
 - titre: Angular, durée: 2 jours, niveau: avancé, descriptif: "En cours de rédaction".
 
 Créer une vue affichant la liste des cours enregistrés avec l'url suivante: /formations
+
+3.
+Ajouter une classe "tag_link" sur les balises "a" rendant les valeurs des tags
+associés aux nodes de type de article
+
