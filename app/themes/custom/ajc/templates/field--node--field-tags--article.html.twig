@@ -1,0 +1,10 @@
+<div class="field-bg">field--node--field-tags--article.html</div>
+
+{% for item in items %}
+    <p>
+        {# dump(item.content) #}
+        <a href="{{ item.content["#url"] }}" class="tag_link">
+        {{ item.content["#title"] }}
+        </a>
+    </p>
+{% endfor %}

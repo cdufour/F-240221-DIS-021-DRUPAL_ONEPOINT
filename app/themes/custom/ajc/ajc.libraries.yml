@@ -1,0 +1,16 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      css/styles.css: {}
+  js:
+    js/test.js: {}
+
+demo:
+  version: 1.x
+  js:
+    js/demo.js: {}
+    js/clock.js: {}
+  dependencies:
+  - core/drupal
+  - core/jquery
